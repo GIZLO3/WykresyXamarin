@@ -10,6 +10,7 @@ namespace WykresyXamarin
 {
     public partial class MainPage : TabbedPage
     {
+        public static List<ChartData> ChartData { get; set; }
         private Color[] Colors = { Color.Red, Color.Blue, Color.Orange, Color.Green, Color.Purple, Color.Gray };
 
         public MainPage()
