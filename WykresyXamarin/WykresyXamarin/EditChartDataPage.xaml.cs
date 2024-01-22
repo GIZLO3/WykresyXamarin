@@ -15,6 +15,18 @@ namespace WykresyXamarin
         public EditChartDataPage()
         {
             InitializeComponent();
+
+            for (int i = 0; i < MainPage.ChartData.Count; i++)
+            {
+                (grid.Children[i] as Entry).Text = MainPage.ChartData[i].Name;
+                (grid.Children[i + 7] as Entry).Text = MainPage.ChartData[i].Value.ToString();
+            }
+            titleEntry.Text = MainPage.ChartTitle;
+        }
+
+        private void ButtonClicked(object sender, EventArgs e)
+        {
+
         }
     }
 }
