@@ -31,7 +31,24 @@ namespace WykresyXamarin
 
         private void BarChartAppearing(object sender, EventArgs e)
         {
-            
+            barChart.Children.Clear();
+            barChart.ColumnDefinitions.Clear();
+            barChart.RowDefinitions.Clear();
+            for (int i = 0; i < ChartData.Count; i++)
+                barChart.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
+
+            barChart.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
+            barChart.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Absolute) });
+            barChart.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Auto) });
+
+            Line horizontalLine = new Line
+            {
+                HeightRequest = 1,
+                BackgroundColor = Color.Black
+            };
+            barChart.Children.Add(horizontalLine, 0, 1);
+
+            barChartLabel.Text = Title;
         }
     }
 }
