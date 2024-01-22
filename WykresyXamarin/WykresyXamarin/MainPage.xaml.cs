@@ -13,7 +13,7 @@ namespace WykresyXamarin
     {
         public static List<ChartData> ChartData { get; set; }
         public static string ChartTitle { get; set; }
-        private Color[] Colors = { Color.Red, Color.Blue, Color.Orange, Color.Green, Color.Purple, Color.Gray };
+        private Color[] Colors = { Color.Red, Color.Blue, Color.Orange, Color.Green, Color.Purple, Color.Gray, Color.Crimson };
         
         public MainPage()
         {
