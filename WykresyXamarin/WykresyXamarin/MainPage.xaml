@@ -9,8 +9,8 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <Label FontSize="17" HorizontalOptions="Center" x:Name="slupkowyLabel"/>
-            <Grid x:Name="wykresSlupkowy" Grid.Row="1"></Grid>
+            <Label FontSize="17" HorizontalOptions="Center" x:Name="barChartLabel"/>
+            <Grid x:Name="barChart" Grid.Row="1"></Grid>
         </Grid>
     </ContentPage>
 

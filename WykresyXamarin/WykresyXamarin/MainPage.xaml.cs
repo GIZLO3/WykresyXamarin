@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using Xamarin.Forms.Shapes;
 
 namespace WykresyXamarin
 {
@@ -26,6 +27,11 @@ namespace WykresyXamarin
                 new ChartData() { Name = "Seria 3", Value = 27},
                 new ChartData() { Name = "Seria 4", Value = 75},
             };
+        }
+
+        private void BarChartAppearing(object sender, EventArgs e)
+        {
+            
         }
     }
 }
