@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="WykresyXamarin.MainPage">
+             x:Class="WykresyXamarin.MainPage" Title="Wykresy">
 
     <ContentPage Title="Słupkowy" Appearing="BarChartAppearing">
         <Grid>
@@ -14,7 +14,7 @@
         </Grid>
     </ContentPage>
 
-    <ContentPage Title="Kołowy" Appearing="">
+    <ContentPage Title="Kołowy">
         <Grid>
         </Grid>
     </ContentPage>
