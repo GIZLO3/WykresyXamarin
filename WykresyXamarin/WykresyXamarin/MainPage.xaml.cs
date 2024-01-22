@@ -84,5 +84,10 @@ namespace WykresyXamarin
                 }
             }
         }
+
+        private void EditDataToolbarItemClicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new EditChartDataPage());
+        }
     }
 }

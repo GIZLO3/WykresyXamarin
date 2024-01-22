@@ -3,6 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="WykresyXamarin.MainPage" Title="Wykresy">
 
+    <TabbedPage.ToolbarItems>
+        <ToolbarItem Text="Edytuj dane" Clicked="EditDataToolbarItemClicked"/>
+    </TabbedPage.ToolbarItems>
+    
     <ContentPage Title="Słupkowy" Appearing="BarChartAppearing">
         <Grid>
             <Grid.RowDefinitions>
