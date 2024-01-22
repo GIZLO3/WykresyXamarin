@@ -17,6 +17,15 @@ namespace WykresyXamarin
         public MainPage()
         {
             InitializeComponent();
+
+            ChartTitle = "Sample";
+            ChartData = new List<ChartData>
+            {
+                new ChartData() { Name = "Seria 1", Value = 15},
+                new ChartData() { Name = "Seria 2", Value = 50},
+                new ChartData() { Name = "Seria 3", Value = 27},
+                new ChartData() { Name = "Seria 4", Value = 75},
+            };
         }
     }
 }
